@@ -70,12 +70,15 @@ function puntaje (intentos)
 }
 
 function jugarOtraVez () {
-    let otravez = parseInt(prompt("¿Desea jugar otra vez? \n 1. Si \n 2. Menu Principal"))
+    let otravez = parseInt(prompt("¿Desea jugar otra vez? \n 1. Si \n 2. Puntaje Total \n 3. Menu Principal"))
     switch (otravez) {
         case 1:
             adivinarNumero()
             break
         case 2:
+            alert ("El puntaje total es de " + puntajeTotal)
+            break
+        case 3:
             menuPrincipal()
             break
         default:
