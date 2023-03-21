@@ -77,6 +77,7 @@ function jugarOtraVez () {
             break
         case 2:
             alert ("El puntaje total es de " + puntajeTotal)
+            jugarOtraVez()
             break
         case 3:
             menuPrincipal()
