@@ -2,42 +2,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce de productos gamer</title>
+    <title>GameMasterX</title>
 </head>
 <body>
 
-    <header>
-        <h1>E-commerce de productos gamer</h1>
-        <p>¡Encuentra los mejores productos gamer al mejor precio!</p>
-
+    <header class="header" >
+        <div class="header-container" >
+        <h1 class="header-title" >GameMaster <span class="t-special" >X</span> </h1>
+        <p class="header-p">¡Encuentra los mejores productos gamer al mejor precio!</p>
+    </div>
     </header>
     <section>
-        <h2>Filtrar por</h2>
-        <label><input type="text" id="buscador" placeholder="Pon el Nombre" >Nombre</label>
 
-        <label><input type="checkbox" id="menor-precio" name="menor-precio" value="menor-precio">Menor Precio</label>
-        <label><input type="checkbox" id="mayor-precio" name="mayor-precio" value="mayor-precio">Mayor Precio</label>
     </section>
 
     <main>
-        
-        <section>
-            <h2>Productos disponibles</h2>
-            <div id="productos"></div>
-        </section>
-        
-        <section>
-            <h2>Carrito de compras</h2>
-            <div id="carrito"></div>
-        </section>
+    <section class="nav" >   
+        <div class="nav-container" >
 
-        
+
+            <label class="filtro-nombre" >Filtrar por Nombre      <input class="input-busqueda" type="text" id="buscador" placeholder="Pon el Nombre" ></label>
+            <nav class="navbar" >
+                <h1 class="navbar-logo" ></h1>
+                <h1 id="verCarrito" class="ver-carrito">Ver Carrito 
+                    <img src="./img/carrito.png" alt="Carrito de compras">
+                    <span id="cantidadCarrito" class="cantidad-carrito"></span>
+                  </h1>
+                  
+            </nav>
+        </div>
+    </section> 
+
     </main>
+    <section>
+        <div id="tiendContent" class="tien-content" >
 
+        </div>
+        
+    </section>
+    <div id="ventanContainer" class="ventan-container" >
+    </div>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/carrito.js" ></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

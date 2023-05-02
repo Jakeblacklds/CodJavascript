@@ -1,0 +1,83 @@
+[
+    {
+    "id": 1,
+    "categoria": "mouse",
+    "nombre": "mouse Logitech G502",
+    "descripcion": "Mouse con 6 botones y sensor óptico",
+    "precio": 1000,
+    "cantidad": 1,
+    "imagen": "https://www.pchmayoreo.com/pub/media/catalog/product/0/9/097855144430-L.jpg"
+    },
+    {
+    "id": 2,
+    "categoria": "mouse",
+    "nombre": "mouse Razer Deathadder",
+    "descripcion": "Mouse Razer con luces RGB ",
+    "precio": 1530,
+    "cantidad": 1,
+    "imagen": "https://m.media-amazon.com/images/I/51QHGpyTqFL.AC_SS450.jpg"
+    },
+    {
+    "id": 3,
+    "categoria": "teclado",
+    "nombre": "teclado razer blackwidow",
+    "descripcion": "Teclado mecánico con luces RGB",
+    "cantidad": 1,
+    "precio": 3400,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_638619-MLA45374821312_032021-O.jpg"
+    },
+    {
+    "id": 4,
+    "categoria": "teclado",
+    "nombre": "teclado logitech G512",
+    "descripcion": "Teclado mecánico con luces RGB",
+    "precio": 1400,
+    "cantidad": 1,
+    "imagen": "https://ddtech.mx/assets/uploads/8d10737356137a6395b34619741ddbb6.png"
+    },
+    {
+    "id": 5,
+    "categoria": "monitor",
+    "nombre": "monitor gamer AOC 24",
+    "descripcion": "Monitor de 24 pulgadas Full HD",
+    "precio": 10000,
+    "cantidad": 1,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_758769-MLA47598712227_092021-O.jpg"
+    },
+    {
+    "id": 6,
+    "categoria": "monitor",
+    "nombre": "monitor Gamer AOC 27",
+    "descripcion": "Monitor de 27 pulgadas, 4K",
+    "precio": 20000,
+    "cantidad": 1,
+    "imagen": "https://i1.wp.com/garrcorpcomputer.com/wp-content/uploads/2021/09/monitor-gamer-8.png?fit=561%2C493&ssl=1"
+    },
+    {
+    "id": 7,
+    "categoria": "auriculares",
+    "nombre": "auriculares hyperX cloud",
+    "descripcion": "Auriculares gamer con micrófono",
+    "precio": 5000,
+    "cantidad": 1,
+    "imagen": "https://webonline.macstore.mx/img/sku/ACCHYP002_FZ.jpg"
+    },
+    {
+    "id": 8,
+    "categoria": "auriculares",
+    "nombre": "auriculares hyperX cloud II",
+    "descripcion": "Auriculares gamer con micrófono",
+    "precio": 7000,
+    "cantidad": 1,
+    "imagen": "https://ddtech.mx/assets/uploads/0629982c1acd2784bdee264d96384a4f.jpg"
+    },
+    {
+    "id": 9,
+    "categoria": "Laptop gamer",
+    "nombre": "Laptop gamer MSI",
+    "descripcion": " Laptop,  Intel Core i7 16GB RAM 512GB ",
+    "precio": 30000,
+    "cantidad": 1,
+    "imagen": "https://ss628.liverpool.com.mx/xl/1128610827.jpg"
+    }
+    ]

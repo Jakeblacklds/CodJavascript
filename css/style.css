@@ -1,122 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 36px;
-  }
-  
-  main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center ;
-    align-items: baseline;
-    padding: 20px;
-    margin: 20;
-  }
-  
-  section {
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    flex-basis: calc(33.33% - 20px);
-    margin: 20px;
-    padding: 20px;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  #productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .producto {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    padding: 20px;
-    text-align: center;
-    width: 45%;
-  }
-  
-  .producto  {
-    width: 100px;
-  }
-  
-  .producto h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .producto p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
+  box-sizing: border-box;
+ 
+}
 
-  .caja-producto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    margin: 10px;
-  }
-  
-  #carrito {
-    margin-top: 20px;
-  }
-  .imagen {
-    width: 100px;
-  }	
-  .producto-carrito {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
-  
-  .producto-carrito p {
-    font-size: 16px;
-  }
+body {
+  background-color: #fff;
+  color: black;
+}
 
-  .caja-producto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    margin: 10px;
-  }
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ 
+}
+.header-container{
+  width: 80%;
+  border-right: 1px solid #999;
+  border-left: 1px solid #999;
+}
+.header-title{
+  font-family: 'Bruno Ace SC', cursive;
+  font-weight: 700;
+  font-size: 110px;
+  margin: 10px;
   
-  #boton-filtrar {
-    background-color: #333;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    padding: 10px;
-  }
+}
+
+.header-p{
+  font-family: 'Bruno Ace SC', cursive;
+  margin: 10px;
+
+}
+.t-special{
+  color: #d81159;
   
+}
+.nav {
+  border-top: 1px solid #999; /* add top border */
+  border-bottom: #999 1px solid;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  font-size: 30px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Bruno Ace SC', cursive;
+  width: 80%;
+  align-items: center;
+  background-color: #fff;
+  border-right: 1px solid #999;
+  border-left: 1px solid #999;
+  padding: 20px;
+  
+}
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  margin-right: 20px;
+}
+
+.ver-carrito {
+  font-size: 28px;
+  color: #222;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.ver-carrito:hover {
+  color: #d81159;
+  
+}
+.ver-carrito img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.ver-carrito img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+ 
+}
+
+
+
+.input-busqueda {
+  font-family: 'Bruno Ace SC', cursive;
+  color: white;
+  background-color: #d81159;
+  
+  border: 1px solid #d81159;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+  width: 200px;
+}
+
+.input-busqueda:focus {
+  background-color: #fff;
+  color: #d81159;
+  border: 1px solid #d81159;
+  box-shadow: 0 0 5px #d81159;
+  outline: none;
+}
+
+.input-busqueda::placeholder {
+  color: white;
+}
+
+/* Estilos para la sección principal */
+.tien-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: end;
+  row-gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+
+  border-right: 1px solid #999;
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999; /* add bottom border */
+  box-sizing: border-box;
+}
+
+
+
+.card {
+  font-family: 'Bruno Ace SC', cursive;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #999;
+  border-radius: 40px;
+  align-items: center;
+ 
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  margin: 20px; ;
+}
+
+.card h3 {
+  
+  font-size: 15px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #999;
+  
+}
+
+.card p {
+  font-size: 12px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.card .precio {
+  font-weight: bold;
+}
+
+.card .comprar {
+  font-family: 'Bruno Ace SC', cursive;
+  background-color: black;
+  font-size: 20px;
+  width: 95%;
+  margin-bottom: 20px;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card .comprar:hover {
+  background-color: #d81159;
+  color: #fff;
+  
+}
+
+/* Modo oscuro */
+
+
+/* Neumorfismo */
+.ventan-container {
+  font-family: 'Bruno Ace SC', cursive;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  flex-direction: column;
+  position: fixed;
+  top: 120px;
+  left: 160px;
+  right: 160px;
+  bottom: 120px;
+  background-color: #fff;
+  border: 1px solid #999 ;
+  border-radius: 10px;
+  overflow-y: auto;
+  display: none;
+  box-sizing: border-box;
+}
+.ventan-container::-webkit-scrollbar {
+  display: none; /* oculta la scrollbar en Chrome, Safari y Opera */
+}
+
+.ventanaHeader {
+  position: sticky;
+  top: 0;
+  z-index: 1; /* asegura que el encabezado esté en la parte superior del contenido */
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #d81159;
+  border-radius: 20px;
+}
+
+
+.ventanaHeader-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.ventan-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  align-items:center ;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.ventanaBtn {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.totalContent {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Animaciones */
+.ventanaBtn:hover {
+  transform: scale(1.1);
+}
+
+.ventanaBtn:active {
+  transform: scale(0.9);
+}
+
+.ventana-img {
+  margin: 30px;
+  width: 100px;
+  height: 90px;
+}
+
+.eliminar-producto {
+  height: 40px;
+  border: 1px solid ;
+  text-align: center;
+  cursor: pointer;
+  color: #d81159;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20%;
+  padding: 5px;
+}
+
+.eliminar-producto:hover {
+  background-color: #d81159;
+  color: #fff;
+}
+
+.cantidad-carrito {
+  background-color: #d81159;
+  color: white;
+  border-radius: 90%;
+  font-size: 15px;
+  padding: 4px;
+  top: 25%;
+  right:19%;
+  position: absolute;
+  display: none;
+}
+
+.finalizar-compra {
+  text-align: center;
+  font-family: 'Bruno Ace SC', cursive;
+  background-color: #fff;
+  font-size: 30px;
+  
+  margin-bottom: 20px;
+  border: 1px solid #d81159;
+  color: #d81159;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.finalizar-compra:hover {
+  background-color: #d81159;
+  color: #fff;
+  
+}
